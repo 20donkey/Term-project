@@ -1,0 +1,233 @@
+body {
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #aa4a30;
+}
+
+/* top*/
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding-top: 50%;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.title-image {
+  width: 60%;
+  position: absolute;
+  right: 30%;
+}
+.colored-section {
+  background-color: #aa2b1d;
+  color: #f7f2f1;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Marcellus SC", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Regular";
+  color: #aa4a30;
+}
+
+.start-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+/* title */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* country section*/
+#country {
+  position: relative;
+}
+.country-name {
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  color: #aa2b1d;
+  text-align: center;
+  font-weight: 800;
+}
+.country-name:hover {
+  color: #beca5c;
+}
+
+.country-icon {
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.country-box {
+  padding: 4.5%;
+}
+/* about */
+#about {
+  background-color: #cc561e;
+  text-align: center;
+}
+.big-heading2 {
+  color: #f7f2f1;
+  font-size: 80px;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.about-intro {
+  color: #f7f2f1;
+  font-size: 30px;
+  line-height: 3rem;
+}
+/* gallery */
+.gallery-title {
+  font-size: 50px;
+}
+.gallery-intro {
+  color: #f7f2f1;
+  font-size: 20px;
+}
+.carousel .carousel-item {
+  height: 800px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 800px;
+}
+
+/*contact*/
+.submit-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*restaurant*/
+.restaurant-link {
+  display: block;
+  text-decoration: none;
+  padding: 2% 0%;
+}
+.restaurant-link:hover {
+  color: #aa4a30;
+}
+.restaurant-name {
+  font-size: 40px;
+  text-decoration: none;
+  color: #aa2b1d;
+  font-weight: 500;
+}
+.restaurant-intro {
+  font-size: 20px;
+  color: #aa4a30;
+}
+.restaurant-info {
+  color: black;
+  font-size: 20px;
+}
+
+/* sitemap */
+.colored-section2 {
+  background-color: #beca5c;
+}
+
+#title2 .container-fluid {
+  padding: 3% 15% 2%;
+}
+.big-heading3 {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+#title2 .navbar {
+  padding: 0%;
+}
+
+/*sitemap*/
+#black {
+  background-color: black;
+}
+.sitemap-tb {
+  color: white;
+  font-size: large;
+}
+
+.sitemap-hd {
+  color: #aa2b1d;
+  padding: 15%;
+  font-size: larger;
+  font-weight: 600;
+}
+.sitemap-td {
+  padding: 10% 15%;
+}
+.sitelink {
+  text-decoration: none;
+  color: white;
+}
+
+.sitelink:hover {
+  color: #aa2b1d;
+}
+
+/*recipe*/
+.recipe-name {
+  color: #aa2b1d;
+  font-weight: 600;
+}
+.recipe-intro {
+  line-height: 2rem;
+  color: black;
+}
