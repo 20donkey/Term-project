@@ -53,8 +53,8 @@
 
 <body>
 
-  <section class="colored-section" id="title">
-    <div class="container-fluid">
+  <section class="title-colored-section" id="title">
+    <div class="container-fluid ">
       <!--navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">HungryAsians</a>
@@ -94,13 +94,9 @@
 
       <!--big heading-->
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="big-heading">Eat.Drink.Love.</h1>
+        <div class="col-md-6 col-sm-12">
+          <h1 class="big-heading" id="eat">Eat.Drink.Love.</h1>
           <a href="#country" class="btn btn-outline-light btn-lg start-button">Start</a>
-        </div>
-        <div class="col-md-6">
-          <img src="images/pngwing.com.png" alt="asian-foods" title="coverpicture">
-
         </div>
 
 
@@ -117,26 +113,26 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="country-box col-lg-3">
-          <img src="images/icons8-dining-64.png" alt="chinese-food" title="chinese-food" class="country-icon">
+        <div class="country-box col-lg-3 col-md-6 col-sm-6">
+          <img src="images/icons8-dining-64.png" alt="chinese-food" title="chinese-food" class="country-icon" id="chinese">
           <a class="country-name" href="chinese.html">Chinese</a>
 
         </div>
 
-        <div class="country-box col-lg-3">
-          <img src="images/icons8-sushi-64.png" alt="japanese-food" title="japanese-food" class="country-icon">
+        <div class="country-box col-lg-3 col-md-6 col-sm-6">
+          <img src="images/icons8-sushi-64.png" alt="japanese-food" title="japanese-food" class="country-icon" id="japanese">
           <a class="country-name" href="japanese.html">Japanese</a>
 
         </div>
 
-        <div class="country-box col-lg-3">
-          <img src="images/icons8-tteok-64.png" alt="korean-food" title="korean-food" class="country-icon">
+        <div class="country-box col-lg-3 col-md-6 col-sm-6">
+          <img src="images/icons8-tteok-64.png" alt="korean-food" title="korean-food" class="country-icon" id="korean">
           <a class="country-name" href="korean.html">Korean</a>
 
         </div>
 
-        <div class="country-box col-lg-3">
-          <img src="images/icons8-thai-food-64.png" alt="other-food" title="other-food" class="country-icon">
+        <div class="country-box col-lg-3 col-md-6 col-sm-6">
+          <img src="images/icons8-thai-food-64.png" alt="other-food" title="other-food" class="country-icon" id="other">
           <a class="country-name" href="other.html">Other</a>
         </div>
       </div>
@@ -148,7 +144,7 @@
   <section>
     <div class="container-fluid" id="about">
 
-      <h3 class="big-heading2">What is HungryAsians?</h3>
+      <h3 class="big-heading2" id="intro">What is HungryAsians?</h3>
       <p class="about-intro">This website will introduce must-eat asian restaurants in Boston. There will be some basic
         information about each
         restaurants such as their most popular meals, whether you need a researvation. There will also be
@@ -169,21 +165,21 @@
         <div class="carousel-item active">
           <img src="images/ddeokbokki_sizzlingpot.jpg" class="d-block w-100" alt="topokki">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="gallery-title">Seoul Topokki </h5>
+            <a class="gallery-title" href="https://www.yelp.com/biz/seoul-topokki-boston?osq=seoul+topokki" target="_blank">Seoul Topokki </a>
             <p class="gallery-intro">Best Korean Topokki (rice cake) in Boston Area</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/o.jpg" class="d-block w-100" alt="zuma">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="gallery-title">Zuma</h5>
+            <a class="gallery-title" href="https://zumarestaurant.com/" target="_blank">Zuma</a>
             <p class="gallery-intro">Located at Four Seasons Hotel, best place to date</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/Sichuan Gourmet Pittsburgh.jpg" class="d-block w-100" alt="sichuan gourmet">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="gallery-title">Sichuan Gourmet</h5>
+            <a class="gallery-title" href="http://www.laosichuan.com/" target="_blank">Sichuan Gourmet</a>
             <p class="gallery-intro">authentic Sichuan-style restaurant</p>
           </div>
         </div>
@@ -200,8 +196,44 @@
   </section>
 
   <script>
+    function gif(){
+    document.getElementById("chinese").src="images/giphy.gif"}
+
+    function gifOut(){
+      document.getElementById("chinese").src="images/icons8-dining-64.png"
+}
+
+function textChange(){
+  document.getElementById("eat").innerText = "Eat Now Or Never"
+}
+
+function styleChange(){
+  document.getElementById("intro").style.color = "yellow"
+}
+  document.getElementById("chinese").onmouseover = function(){
+       gif();
+
+     }
+     document.getElementById("chinese").onmouseout = function(){
+       gifOut();
+
+     }
+
+     document.getElementById("eat").onmouseover = function(){
+       textChange();
+     }
+     document.getElementById("intro").onmouseover = function(){
+       styleChange();
+     }
+
+     
+
+    
+
+
 
   </script>
+
 </body>
 
 </html>
